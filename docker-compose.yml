@@ -2,13 +2,13 @@
 services:
   frontend:
     build:
-      context: ./frontend
+      context: srln/frontend
       dockerfile: Dockerfile
     image: frontend:latest
 
   backend:
     build:
-      context: ./backend
+      context: srln/backend
       dockerfile: Dockerfile
     image: backend:latest
     environment:
